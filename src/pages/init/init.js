@@ -10,19 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PasswordModelService } from '../../services/password-model.service';
-var HomePage = (function () {
-    function HomePage(navCtrl, pwdModel) {
+var InitPage = (function () {
+    function InitPage(navCtrl, pwdModel) {
         this.navCtrl = navCtrl;
         this.pwdModel = pwdModel;
     }
-    return HomePage;
+    return InitPage;
 }());
-HomePage = __decorate([
+InitPage = __decorate([
     Component({
-        selector: 'page-home',
-        templateUrl: 'home.html'
+        selector: 'page-init',
+        templateUrl: 'init.html'
     }),
     __metadata("design:paramtypes", [NavController, PasswordModelService])
-], HomePage);
-export { HomePage };
-//# sourceMappingURL=home.js.map
+], InitPage);
+export { InitPage };
+//# sourceMappingURL=init.js.map

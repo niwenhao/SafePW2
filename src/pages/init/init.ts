@@ -3,10 +3,10 @@ import { NavController } from 'ionic-angular';
 import { PasswordModelService } from '../../services/password-model.service'
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-init',
+  templateUrl: 'init.html'
 })
-export class HomePage {
+export class InitPage {
 
   constructor(public navCtrl: NavController, private pwdModel: PasswordModelService) {
   }

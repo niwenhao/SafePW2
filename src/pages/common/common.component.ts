@@ -7,6 +7,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class CommonNavbar {
   @Input() subject: string;
+  @Input() hasLogin: boolean;
   @Output() logout: EventEmitter<number>;
 
   do_logout() {

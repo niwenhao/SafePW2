@@ -15,6 +15,12 @@ var InitPage = (function () {
         this.navCtrl = navCtrl;
         this.pwdModel = pwdModel;
     }
+    InitPage.prototype.ngAfterViewInit = function () {
+        if (this.pwdModel.isTherePWFile()) {
+        }
+        else {
+        }
+    };
     return InitPage;
 }());
 InitPage = __decorate([
@@ -25,4 +31,15 @@ InitPage = __decorate([
     __metadata("design:paramtypes", [NavController, PasswordModelService])
 ], InitPage);
 export { InitPage };
+var InitPasswordPage = (function () {
+    function InitPasswordPage() {
+    }
+    return InitPasswordPage;
+}());
+InitPasswordPage = __decorate([
+    Component({
+        templateUrl: 'page-init-password.html'
+    })
+], InitPasswordPage);
+export { InitPasswordPage };
 //# sourceMappingURL=init.js.map

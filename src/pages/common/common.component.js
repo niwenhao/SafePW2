@@ -23,6 +23,10 @@ __decorate([
     __metadata("design:type", String)
 ], CommonNavbar.prototype, "subject", void 0);
 __decorate([
+    Input(),
+    __metadata("design:type", Boolean)
+], CommonNavbar.prototype, "hasLogin", void 0);
+__decorate([
     Output(),
     __metadata("design:type", EventEmitter)
 ], CommonNavbar.prototype, "logout", void 0);

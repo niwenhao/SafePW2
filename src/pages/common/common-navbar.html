@@ -1,9 +1,9 @@
 <ion-navbar>
-  <button ion-button menuToggle>
+  <button ion-button menuToggle *ngIf="hasLogin">
     <ion-icon name="menu"></ion-icon>
   </button>
   <ion-title>{{subject}}</ion-title>
-  <button ion-button (click)="do_logout()">
+  <button ion-button (click)="do_logout()" *ngIf="hasLogin">
     <ion-icon name="exit"></ion-icon>
   </button>
 </ion-navbar>

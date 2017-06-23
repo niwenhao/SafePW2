@@ -8,20 +8,50 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Injectable } from '@angular/core';
+/**
+ * To access a crypto-safe password file.
+ *
+ * can encoding or decoding password map with same crypto method link AES.
+ *
+ * @description
+ *    Password file format:
+ *
+ *
+ * <h1/>
+ *
+ */
 var PasswordModelService = (function () {
+    /**
+     * Constructor.
+     * Crypto service should be injected in the future.
+     */
     function PasswordModelService() {
     }
+    /**
+     * judge whether the password file exists.
+     * @return true: exists false: not exists.
+     */
     PasswordModelService.prototype.isTherePWFile = function () {
         return true;
     };
+    /**
+     * get password data after authorized the file.
+     * @return PasswordModel
+     */
     PasswordModelService.prototype.getPasswordModel = function () {
         return null;
     };
+    /**
+     * Authority the password file and decoding it to memory.
+     */
     PasswordModelService.prototype.authorityPWFile = function (uid, pwd) {
         return new Promise(function (resolve, reject) {
             resolve();
         });
     };
+    /**
+     * encode password data and save it as file.
+     */
     PasswordModelService.prototype.savePWFile = function () {
         return new Promise(function (resolve, reject) {
             resolve();

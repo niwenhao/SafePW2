@@ -1,1 +1,1 @@
-{"version":3,"file":"common-types.js","sourceRoot":"","sources":["common-types.ts"],"names":[],"mappings":"AACA,MAAM,CAAN,IAAY,UAEX;AAFD,WAAY,UAAU;IACpB,yCAAO,CAAA;IAAE,2CAAI,CAAA;IAAE,6CAAK,CAAA;AACtB,CAAC,EAFW,UAAU,KAAV,UAAU,QAErB"}
+{"version":3,"file":"common-types.js","sourceRoot":"","sources":["common-types.ts"],"names":[],"mappings":"AAAA;;;GAGG;AAHH;;;GAGG,CACH,MAAM,CAAN,IAAY,UAEX;AAFD,WAAY,UAAU;IACpB,yCAAO,CAAA;IAAE,2CAAI,CAAA;IAAE,6CAAK,CAAA;AACtB,CAAC,EAFW,UAAU,KAAV,UAAU,QAErB"}

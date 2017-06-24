@@ -1,0 +1,16 @@
+<ion-header>
+  <sp-common-navbar [subject]="Initialize show pattern" hasLogin="false">
+  </sp-common-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+        <b>{{hintText}}</b>
+    </ion-item>
+    <ion-item>
+        <sp-pattern-input></sp-pattern-input>
+    </ion-item>
+    <button ion-button (click)="onSave()">Save</button>
+  </ion-list>
+
+</ion-content>

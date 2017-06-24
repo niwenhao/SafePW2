@@ -45,6 +45,21 @@ export class InitPage implements AfterViewInit {
 export class InitPasswordPage {
   password1st: string;
   password2nd: string;
+
+  constructor(private navCtrl: NavController, private pwdModel: PasswordModelService) {
+
+  }
+
+  onSave() {
+    this.navCtrl.push(InitPatternPage);
+  }
+}
+
+@Component({
+  templateUrl: 'page-logon.html'
+})
+export class InitLogonPage {
+
 }
 
 /**
@@ -54,5 +69,13 @@ export class InitPasswordPage {
   templateUrl: 'page-init-pattern.html'
 })
 export class InitPatternPage {
+  hintText: string;
 
+  constructor(private navCtrl: NavController, private pwdModel: PasswordModelService) {
+
+  }
+
+  onSave() {
+    this.navCtrl.setRoot(InitLogonPage);
+  }
 }

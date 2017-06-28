@@ -8,7 +8,14 @@
         <b>{{hintText}}</b>
     </ion-item>
     <ion-item>
-        <sp-pattern-input></sp-pattern-input>
+        <sp-pattern-input
+          [dataserial]="['1', '2', '3', '4', '5', '6', '7', '8', '9']"
+          [rowCount]="3"
+          [columnCount]="3"
+          [refreshMS]="100"
+          [stillRefreshTimes]="5"
+          (decided)="decidedPattern(event)"
+        ></sp-pattern-input>
     </ion-item>
     <button ion-button (click)="onSave()">Save</button>
   </ion-list>

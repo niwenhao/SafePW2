@@ -70,12 +70,17 @@ export class InitLogonPage {
 })
 export class InitPatternPage {
   hintText: string;
+  lastPattern: string[];
 
   constructor(private navCtrl: NavController, private pwdModel: PasswordModelService) {
-
+    
   }
 
   onSave() {
     this.navCtrl.setRoot(InitLogonPage);
+  }
+
+  decidedPattern(event: String[]) {
+
   }
 }
